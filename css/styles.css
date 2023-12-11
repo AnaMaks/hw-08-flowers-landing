@@ -82,7 +82,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -116,29 +117,27 @@ table {
 /* HEADER */
 
 body {
-  font-family: 'Architects Daughter', cursive;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif;
   background-color: #D8D8D6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 header {
   background: #81A36B;
+  padding: 20px 0;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 165px;
   color: #161616;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  padding-left: 165px;
 }
 .logo {
-  padding: 20px 0;
+  display: inline-block;
 }
 .menu {
   display: flex;
@@ -146,27 +145,21 @@ header {
 }
 .menu a {
   color: #161616;
+  text-decoration: none;
 }
 .main-desc {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.title-desc {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 164.063%;
-}
 .title {
   font-family: 'Architects Daughter', cursive;
   font-size: 62px;
   font-weight: 400;
-  line-height: normal;
-  padding-bottom: 41px;
+  margin-bottom: 40px;
 }
 .title-desc p {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .title-buttons {
   display: flex;
@@ -174,23 +167,15 @@ header {
 }
 .btn-order {
   background: #81A36B;
-  border-style: none;
   border-radius: 6px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-  padding: 18px 34px 21px 34px;
+  padding: 18px 34px 14px 34px;
   cursor: pointer;
 }
 .btn-help {
   border: 1px solid #81A36B;
   border-radius: 6px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-  padding: 18px 34px 21px 34px;
+  padding: 18px 34px 14px 34px;
+  background: transparent;
   cursor: pointer;
 }
 .main-img {
@@ -206,9 +191,7 @@ header {
   color: #000;
   font-family: 'Architects Daughter', cursive;
   font-size: 32px;
-  font-weight: 400;
-  line-height: normal;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .desc-about > p {
   color: #161616;
@@ -219,19 +202,14 @@ header {
 }
 .divider-green {
   background-color: #81A36B;
+  padding: 78px 0;
 }
 .divider-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 167px;  
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #161616;
   text-align: center;
-}
-.divider-container > div {
-  padding: 78px 0;
 }
 .pictogram {
   width: 80px;
@@ -251,8 +229,8 @@ header {
   padding: 120px 0;
 }
 .work-image {
-  width: 540px;
   height: 560px;
+  flex: 1 1 45%;
 }
 .title-work {
   font-family: 'Architects Daughter', cursive;
@@ -263,12 +241,8 @@ header {
   padding-bottom: 50px;
 }
 .work-desc {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
   text-align: justify;
-  padding-bottom: 120px;
+  flex: 1 1 45%;
 }
 .our-works {
   padding-bottom: 120px;
@@ -276,27 +250,25 @@ header {
 .our-works > h2 {
   font-family: 'Architects Daughter', cursive;
   font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
   text-align: center;
   padding-bottom: 50px;
 }
 .our-works > div {
   display: flex;
-  justify-content: center;
   gap: 30px;
 }
 .card-bouquet {
   background-color: #81A36B;
   border-radius: 6px;
   text-align: center;
+  flex: 1 1 30%;
+  padding: 15px 15px 40px;
 }
 .card-image {
-  padding: 15px 15px 20px 15px;
   border-radius: 6px;
-}
-.card-bouquet > p {
-  padding-bottom: 40px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 footer {
   background: #81A36B;
@@ -315,13 +287,15 @@ footer {
 .contacts-details {
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  color: inherit;
 }
 .contacts + div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 10px;
+  padding: 10px 0;
 }
 .social-media {
   width: 25px;
